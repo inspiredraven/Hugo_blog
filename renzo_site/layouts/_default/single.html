@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  {{- partial "head.html"}}
-  <body>
-    <!-- Header -->
-    {{- partial "header.html"}}
-    <!-- Header -->
-
-    <!--main-->
-    {{- block "main" .}} {{- end }}
-    <!--/main-->
-
-    <!-- footer -->
-    {{- partial "footer.html"}}
-    <!-- /footer -->
-  </body>
-</html>
+{{define "main"}} single.html
+{{.Content}}
+{{ end }}

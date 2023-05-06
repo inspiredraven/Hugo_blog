@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  {{- partial "head.html"}}
-  <body>
-    <!-- Header -->
-    {{- partial "header.html"}}
-    <!-- Header -->
+{{define "main"}} list.html
 
-    <!--main-->
-
-    {{- block "main" .}} list.html {{- end }}
-
-    <!--/main-->
-
-    <!-- footer -->
-    {{- partial "footer.html"}}
-    <!-- /footer -->
-  </body>
-</html>
+{{ range .Pages.ByPublishDate.Reverse }}
+    <a href="{{ .RelPermalink }}">{{.Title}}</a>
+{{ end }}
+{{.Content}}
+{{ end }}
