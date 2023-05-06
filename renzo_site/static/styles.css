@@ -1,11 +1,17 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: none;
+    box-sizing: border-box;
 }
 body {
-  font-family: Jetbrains mono
+    font-family: Jetbrains mono;
+    display: grid;
 }
+
+main {
+    position: relative;
+}
+
 /*Navigation bar styles start*/
 nav{
     position: relative;
@@ -42,6 +48,8 @@ a:nth-child(2) {
 a:nth-child(3) {
     width: 100px;
 }
+
+
 /*Navigation bar styles end*/
 
 /*Navigation bar animation styles start*/
@@ -76,4 +84,36 @@ nav a:nth-child(2):hover~.animation {
 nav a:nth-child(3):hover~.animation {
     width: 110px;
     left: 194px;
+}
+
+/*footer*/
+footer{
+    position: relative;
+    background: black;
+    color: white;
+    height: auto;
+    width: 100vw;
+    padding-top: 30px;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 15px;
+    color: #cacdd2;
+
 }
