@@ -1,4 +1,3 @@
-baseURL = "//adhocref.com"
+baseURL = '/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-
