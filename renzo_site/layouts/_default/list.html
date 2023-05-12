@@ -1,7 +1,7 @@
 {{define "main"}} list.html
 
-{{ range .Pages.ByPublishDate.Reverse }}
-    <a href="{{ .RelPermalink }}">{{.Title}}</a>
-{{ end }}
-{{.Content}}
+    {{ range .Pages.ByPublishDate.Reverse }}
+        <a href="{{ .RelPermalink }}">{{.Title}}</a>
+    {{ end }}
+    {{.Content}}
 {{ end }}
