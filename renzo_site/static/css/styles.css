@@ -9,6 +9,12 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 div.nav {
     display:flex;
     flex-direction: row;
@@ -64,13 +70,13 @@ div.nav li:nth-child(2):hover~.animation {
 }
 
 div.nav li:nth-child(3):hover~.animation {
-    width: 182px;
-    left: 368px;
+    width: 180px;
+    left: 380px;
 }
 
 div.nav li:nth-child(4):hover~.animation {
     width: 180px;
-    left: 574px;
+    left: 572px;
 }
 
 #nav-items {
@@ -99,7 +105,7 @@ div.nav li:nth-child(4):hover~.animation {
 
 
 .hero {
-    background-image: url(jplenio.jpg);
+    background-image: url(sunset.jpeg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -157,21 +163,26 @@ div.nav li:nth-child(4):hover~.animation {
 }
 
 #aboutme {
+    display: flex;
+    flex-direction: column;
     min-height: 105vh;
     background: #ffd046;
 }
 
-#aboutme h3 {
+#aboutme h3{
+    padding-top: 100px;
     text-align: center;
-    padding-top: 20px;
 }
 
+.aboutme {
+    display: flex;
+    flex-direction: row;
+}
 
-#aboutme p {
-    max-width: 500px;
-    text-align: left;
-    padding-left: 100px;
-    padding-top: 30px;
+.myportrait {
+    background-image: url(portrait2.JPG);
+    width: 1080px;
+    height: 720px;
 }
 
 footer {
