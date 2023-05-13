@@ -1,14 +1,13 @@
-{{define "main"}} <list class="html"></list>
-<div class="list-background">
-    <div class = "list-content">
-        {{.Content}}
-    </div>
+{{define "main"}}
+    <div class="list-background">
+        <h2 class="list-content">{{ .Title }}</h2>
+        <div class = "list-content">
+            {{.Content}}
+        </div>
 
-
-    <div class="resume">
-        {{ range .Pages }}
-            {{ .Render "summary" }}
-        {{ end }}
+        <div class="resume">{{ range .Pages }}
+                {{ .Render "summary" }}
+            {{ end }}
+        </div>
     </div>
-</div>
 {{ end }}

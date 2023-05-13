@@ -4,7 +4,8 @@
 </div>
 
 <div class="hero-text">
-    <p>“A year from now you may wish you had started today.” — Karen Lamb</p>
+
+    <p>{{readFile "/content/quotes/karen.md"}}</p>
     <h1>WELCOME</h1>
     <div class="button">
         <a class="about-button" href="#aboutme">Who Am I?</a>
@@ -31,9 +32,9 @@
     </div> 
 
     <div class="home-summary">
-        {{ range first 5 .Site.RegularPages }}
-            {{ .Render "summary" }}
-        {{ end }}
+        {{.Site.Copyright}}
+        {{ time "2016-05-28" }}
+        
     </div>
 </div>
 

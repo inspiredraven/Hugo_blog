@@ -1,8 +1,0 @@
-baseURL: /
-languageCode: en-us
-title: Renzo's site
-
-params:
-  custom_css:
-    - css/styles.css
- 
