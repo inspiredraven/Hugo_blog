@@ -120,6 +120,8 @@ div.nav {
 
 .hero-text .button a.about-button:hover {
     background: #ffd046;
+    border-radius: 50px;
+    transition: 1.3s;
 }
 
 .hero-text .button a.contact-button {
@@ -131,6 +133,8 @@ div.nav {
 }
 .hero-text .button a.contact-button:hover {
     background: #ffd046;
+    border-radius: 50px;
+    transition: 1.3s;
 }
 
 #aboutme {
@@ -172,6 +176,7 @@ div.nav {
 
 .summary {
     color: #7a7575;
+    padding-left: 10px;
 
 }
 
@@ -186,6 +191,24 @@ footer h2{
     padding: 20px;
 }
 
+ion-icon {
+    padding-top: 40px;
+    color: white;
+    width: 50px;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+    padding: 18px;
+    padding-left: 2px;
+}
+
+.icons a:hover {
+    background-color: #ffd046;
+    border-radius: 50px;
+    transition: 1s;
+}
+
 .errorpage {
     background-color: #0d0e0d;
     width: 100%;
@@ -193,9 +216,9 @@ footer h2{
 }
 
 .errorcontent {
-    position: fixed;
-    top: 50%;
-    left: 30%;
+    position: relative;
+    top: 100px;
+    left: 10px;
 }
 /*media queries*/
 
@@ -272,10 +295,10 @@ footer h2{
         flex-direction: column;
         text-align: center;
         width: 250px;
-        height: 50vh;
+        height: 60vh;
         background: #000000;
         position: fixed;
-        top: 60px;
+        top: 70px;
         left: -250px;
         z-index: 2;
         transition: 1s;
@@ -296,51 +319,21 @@ footer h2{
     }
     
 
-    div.animation {
-        position: absolute;
-        height: 10%;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        background: #ffd046;
-        width: 0px;
-        border-top-right-radius: 0px;
-        border-top-left-radius: 0px;
-        transition: all 1.5s ease .18s;
-    }
-    
-    div .start-home {
-        width: 0px;
-        top: 15px;
-    }
-    
-    div.nav li:nth-child(1):hover~.animation {
-        width: 250px;
-        top: 73px;
-    }
-    
-    div.nav li:nth-child(2):hover~.animation {
-        width: 250px;
-        top: 123px;
-    }
-    
-    div.nav li:nth-child(3):hover~.animation {
-        width: 250px;
-        top: 173px;
-    }
-    div.nav li:nth-child(4):hover~.animation {
-        width: 250px;
-        top: 223px;
-    }
-
     #nav-items li {
         list-style: none;
+
         padding-left: 50px;
         padding-right: 40px;
         line-height: 50px;
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 1px;
+    }
+
+    #nav-items li:hover {
+        background: #ffd046;
+        width: 100%;
+        transition: 1.3s;
     }
 
     #nav-items li a {
@@ -366,13 +359,26 @@ footer h2{
         padding: 0px;
         padding-bottom: 20px;
     }
-
-    @media screen and (max-width: 350px) {
-        .myportrait {
-            width: 200px; 
-            height: auto;
-            padding: 0px;
-            padding-bottom: 20px;
-        }
+}
+@media screen and (max-width: 350px) {
+    .myportrait {
+        width: 200px; 
+        height: auto;
+        padding: 0px;
+        padding-bottom: 20px;
     }
+}
+
+.list-content {
+    padding: 20px;
+    padding-left: 200px;
+}
+
+.list-background {
+    background-image: url(timeline.png);
+}
+
+.resume {
+    padding: 20px;
+    padding-left: 120px;
 }
