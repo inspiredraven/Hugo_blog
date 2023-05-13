@@ -13,22 +13,29 @@
 </div>
 
 <div id="aboutme">
-    <h3>About me (Renzo)</h3>
+    <h3>About me and the website</h3>
     <div class="aboutme">
     
-        {{ $portrait := resources.Get "/images/portrait2.JPG" }}
-        {{ $portrait := $portrait.Resize "400x400" |  resources.Copy "/images/portrait2.JPG"}}
+        {{ $ogimage := resources.Get "/images/portrait2.JPG" }}
+        {{ $portrait := $ogimage.Resize "650x500" }}
         <img class="myportrait" src="{{ $portrait.RelPermalink }}">
         <div class="aboutme-text">
             <p>As you might have already guessed, my name is Renzo Labajanan.</p>  
             <p>I'm an accounting college student in Mississippi. </p> 
             <p>Although I'm very passionate about the business genre, I also program/code on the side. </p> 
             <p>I hope one day I can combine these two fields into a career after college.</p> 
-             
-        </div>
-         
-    </div>
+            <p>Regarding the website...</p>
+            <a>The website is still under construction so please bear with me</a>
+            <p>I plan to put a summary of portfoliuo and/or resume so please look out for that</p>
 
+        </div> 
+    </div>
+    <div class="aboutme-text">
+        <h4>Summary</h4>
+        {{ range first 5 .Site.RegularPages }}
+            {{ .Render "summary" }}
+        {{ end }}
+    </div>
 </div>
 
 {{ end }}

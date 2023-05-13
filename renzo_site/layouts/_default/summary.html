@@ -1,0 +1,12 @@
+<a href="{{ .Permalink }}">
+    <div>
+        <div class="summary">{{ .Title }}</div>
+        <div class="summary">{{ .Summary }}</div>
+        <div class="summary">
+          <span>{{ .ReadingTime }} Minutes</span>
+          <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+          <span>{{ .WordCount }} Words</span>
+        </div>
+    </div>
+
+</a>
