@@ -65,7 +65,7 @@ div.nav {
 
 
 .hero {
-    background-image: url(sunset.jpeg);
+    background-image: url(sunset.avif);
     width: 100%;
     height: 120vh;
     background-size: cover;
@@ -191,8 +191,11 @@ footer h2{
     padding: 20px;
 }
 
+footer p {
+    padding-bottom: 40px;
+}
+
 ion-icon {
-    padding-top: 40px;
     color: white;
     width: 50px;
 }
@@ -359,7 +362,14 @@ ion-icon {
         padding: 0px;
         padding-bottom: 20px;
     }
-}
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}     
+
 @media screen and (max-width: 350px) {
     .myportrait {
         width: 200px; 
@@ -374,7 +384,7 @@ ion-icon {
     padding-left: 200px;
 }
 
-.list-background {
+.list-container {
     background-image: url(timeline.png);
 }
 
