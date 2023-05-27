@@ -3,6 +3,13 @@
         <div class="summary">{{ .Title }}</div>
         <div class="summary">{{ .Summary }}</div>
         <div class="summary">
+        {{ if .Truncated }}
+        <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+        <div>
+          <a href="{{ .RelPermalink }}">Read More…</a>
+        </div>
+        {{ end }}
+  
           <span>{{ .ReadingTime }} Minutes</span>
           <span>{{ .Date.Format "Jan 2, 2006" }}</span>
           <span>{{ .WordCount }} Words</span>

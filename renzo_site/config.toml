@@ -1,5 +1,4 @@
 baseURL = "/"
 title = "Renzo's site"
-enableKinds = ['sitemap']
-
+summaryLength = 5
  
