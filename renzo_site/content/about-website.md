@@ -2,10 +2,7 @@
 title: "About the Website"
 date: 0000-05-01T20:49:00-05:00
 draft: false
-summary: This is an overview of how the website was created
 ---
-
-## About the website
 
 * I will list all the tools I used to create the website and how to install those tools
 * for example
