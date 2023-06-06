@@ -1,0 +1,51 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/styles.min.5306a2a1ea63b592eca2f1e653e3f50bfba66b4c100884863c8bb91b6d6fbc82.css><title>About the Website</title></head><body><header><div class=nav><ul id=nav-items><li><a href=/>Home</a></li><li><a href=/portfolio>Portfolio</a></li><li><a href=/#aboutme>About me</a></li><li><a href=/#contact>Contact</a></li><div class="animation start-home"></div></ul><ion-icon id=hamburger name=menu-outline></ion-icon></div></header><main>single.html<div class=single-main><ul><li>I will list all the tools I used to create the website and how to install those tools</li><li>for example</li><li>I&rsquo;m running linux-mint and windows 11</li><li>I also use the nix package manager and vs code</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sh &lt;<span style=color:#f92672>(</span>curl -L https://nixos.org/nix/install<span style=color:#f92672>)</span> --daemon
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>nix-env -iA nixpkgs.vscode
+</span></span></code></pre></div><ul><li>I will describe briefly how the website is made</li></ul><h3 id=css>CSS</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#f92672>*</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>margin</span>: <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>padding</span>: <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>box-sizing</span>:<span style=color:#66d9ef>border-box</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>font-family</span>: <span style=color:#e6db74>&#39;Lucida Sans&#39;</span>, <span style=color:#e6db74>&#39;Lucida Sans Regular&#39;</span>, <span style=color:#e6db74>&#39;Lucida Grande&#39;</span>, <span style=color:#e6db74>&#39;Lucida Sans Unicode&#39;</span>, Geneva, Verdana, <span style=color:#66d9ef>sans-serif</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>html</span> {
+</span></span><span style=display:flex><span>    scroll-behavior: <span style=color:#66d9ef>smooth</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>header</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>position</span>: <span style=color:#66d9ef>sticky</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>top</span>: <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>z-index</span>: <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=html>html</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;en&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>    {{ partial &#34;head.html&#34;}}
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>title</span>&gt;
+</span></span><span style=display:flex><span>        {{.Title}}
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>title</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>header</span>&gt;
+</span></span><span style=display:flex><span>        {{ partial &#34;nav-bar.html&#34; }}
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>header</span>&gt;
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>main</span>&gt;
+</span></span><span style=display:flex><span>        {{ block &#34;main&#34; .}}{{- end }}
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>main</span>&gt;
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>footer</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;contact&#34;</span>&gt;
+</span></span><span style=display:flex><span>        {{ partial &#34;footer.html&#34; }}
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>footer</span>&gt;
+</span></span><span style=display:flex><span>    {{ $jscript := resources.Get &#34;script.js&#34; | minify | fingerprint }}
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ $jscript.Permalink }}&#34;</span>&gt;&lt;/<span style=color:#f92672>script</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;module&#34;</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js&#34;</span>&gt;&lt;/<span style=color:#f92672>script</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>nomodule</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js&#34;</span>&gt;&lt;/<span style=color:#f92672>script</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
+</span></span></code></pre></div></div></main><footer id=contact><h2>Renzo's Links</h2><p>Reach out to me at the socials below:</p><div class=icons><a href=https://www.instagram.com/inspir3draven/><ion-icon name=logo-instagram></ion-icon>inspir3draven</a>
+<a href=https://www.youtube.com/@inspiredraven><ion-icon name=logo-youtube></ion-icon>inspiredraven</a>
+<a href=https://github.com/inspiredraven><ion-icon name=logo-github></ion-icon>inspiredraven</a></div></footer><script src=/script.min.0a0b33bffc7146059dbf687c17286dea089c52ac262db71e6a90869659413864.js></script>
+<script type=module src=https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js></script>
+<script nomodule src=https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js></script></body></html>
