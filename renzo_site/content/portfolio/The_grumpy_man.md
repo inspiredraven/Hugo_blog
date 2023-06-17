@@ -1,6 +1,6 @@
 ---
 title: "The Grumpy Man LLC"
-date: 05/23/2022
+date: 2022-05-11T21:23:22-05:00
 draft: false
 ---
 #### Company/Firm: The Grumpy Man LLC

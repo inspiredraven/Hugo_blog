@@ -1,6 +1,6 @@
 ---
 title: "The_home_depot"
-date: 10/01/2020
+date: 2020-10-01T21:23:22-05:00
 draft: false
 ---
 #### Company/Firm: The Home Depot

@@ -2,20 +2,26 @@
     <div class="list-background">
         <div class = "list-content">
             {{.Content}}
-            <div id="experience"> </div>
         </div>
 
         <div class="experience">
             <h2>Experience</h2>
             <ul>
-                {{ range .Pages.ByDate }}
+                {{ with .Site.GetPage "/portfolio" }} 
+                {{ range .Pages.ByDate  }}
                 <li>
                     <div class="summary">
                         {{ .Content }}
                     </div>
                 </li>    
-                {{ end }}
+                {{ end }}{{ end }}
             </ul>
+        </div>
+
+        <div id="Projects" style="height: 100px;"></div>
+        <div class="list-content">
+
+            {{ with .Site.GetPage "/project/Projects.md" }}{{ .Content }}{{ end }}
 
         </div>
     </div>
