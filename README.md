@@ -18,3 +18,6 @@ The goal of this project is to create a blog where I can showcase my resume, pro
 
 [www.renzolabajanan.com](https://www.renzolabajanan.com)
 
+#### Note to self:
+- Only a leaf bundle can be headless
+

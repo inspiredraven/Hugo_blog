@@ -17,6 +17,7 @@ html {
 }
 /* Main div of single page html */
 
+/* Navigation bar */
 header {
     position: sticky;
     top: 0;
@@ -68,8 +69,6 @@ div.nav {
     text-decoration: none;
     color: white;
 }
-
-
 
 .hero {
     background-image: url(sunset.jpeg);
@@ -142,6 +141,10 @@ div.nav {
     background: #ffd046;
     border-radius: 50px;
     transition: 1.3s;
+}
+
+body {
+    background: #fff1c9;
 }
 
 #aboutme {
@@ -238,13 +241,9 @@ h4 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.list-background {
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
 .list-content {
-    padding: 20px;
+    margin: 20px;
 }
 
 .list-background h2, h4 {
@@ -275,37 +274,106 @@ h4 {
     text-decoration: underline;
 }
 
-.experience {
-    padding: 10px;
-    padding-top: 90px;
-
+/* Portfolio timeline styles */
+.timeline-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.experience ul li {
+/* Portfolio timeline two sections (Exp and education) styles */
+.portfolio-section {
+    position: relative;
+    margin: 20px;
+    padding-top: 50px;
+}
+
+.timeline-marker-div {
+    border-left: 2px solid #000000;
+}
+
+.portfolio-section ul li {
     list-style-type: none;
 }
 
-.experience ul li div a {
+.portfolio-section ul li div a {
     display: flex;
     flex-direction: column;
 }
 
+.portfolio-section #education {
+    flex-grow: 1;
+}
+
+.portfolio-section #experience {
+    flex-grow: 1;
+}
+
 .summary {
-    margin: 30px;
+    margin: 20px;
+    margin-bottom: 50px;
     background: #ffffffb3;
-    box-shadow: 3px 3px 15px 0px rgba(141, 137, 137, 0.6);
+    box-shadow: 2px 2px 5px 0px rgba(141, 137, 137, 0.6);
     border-radius: 10px;
     padding: 20px;
-    height: 50vh;
+    height: 80vh;
+    width: 40vw;
     overflow: hidden;
 }
-
+#education div .summary {
+    height: 40vh
+}
 .summary ul li {
     list-style-type: circle;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
+.summary ul li a {
+    list-style: none;
+    text-decoration: none;
 
+}
+
+.portfolio-section-viewmore {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Portfolio animations and accessories */
+
+.summary:hover {
+    box-shadow: 4px 4px 15px 0px rgba(141, 137, 137, 0.6);
+}
+
+.timeline-dot {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ffd046;
+    border: 2px solid black;
+    right: calc(100% - 10px);
+    margin-top: 50px;
+    z-index: 0;
+    
+    
+}
+
+/* Portfolio Project section */
+.list-background #Projects div.list-content {
+    margin-bottom: 50px;
+    margin: 40px;
+    background: #ffffffb3;
+    box-shadow: 2px 2px 5px 0px rgba(141, 137, 137, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
 
 /*media queries*/
 
@@ -313,6 +381,16 @@ h4 {
     .aboutme {
         display: flex;
         flex-direction: column;
+    }
+
+    .timeline-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .summary {
+        width: 82vw;
+        height: 60vh;
     }
 }
 
@@ -428,6 +506,10 @@ h4 {
         text-transform: uppercase;
         text-decoration: none;
         color: white;
+    }
+
+    #education div .summary {
+        height: 60vh
     }
 }
 

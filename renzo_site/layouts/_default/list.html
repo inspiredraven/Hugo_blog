@@ -3,26 +3,55 @@
         <div class = "list-content">
             {{.Content}}
         </div>
+        <div class="timeline-body">
+            <section class="portfolio-section" id="experience">
+                
+                <h2>Experience</h2>
+                <div class="timeline-marker-div">
+                    <ul>
+                        {{ with .Site.GetPage "/portfolio" }} 
+                        {{ range .Pages.ByDate }}
+                        <li>
+                            <div class="timeline-dot"></div>
+                            <div class="summary">
+                                {{ .Content}}
+                            </div>
+                        </li>    
+                        {{ end }}{{ end }}
+                    </ul>
+                </div>
 
-        <div class="experience">
-            <h2>Experience</h2>
-            <ul>
-                {{ with .Site.GetPage "/portfolio" }} 
-                {{ range .Pages.ByDate  }}
-                <li>
-                    <div class="summary">
-                        {{ .Content }}
-                    </div>
-                </li>    
-                {{ end }}{{ end }}
-            </ul>
+            </section>
+    
+            <section class="portfolio-section" id="education">
+                
+                <h2>Education</h2>
+                <div class="timeline-marker-div">
+                    <ul>
+                        {{ with .Site.GetPage "/education" }} 
+                        {{ range .Pages.ByDate }}
+                        <li>
+                            <div class="timeline-dot"></div>
+                            <div class="summary">
+                                {{ .Content }}
+                            </div>
+                        </li>    
+                        {{ end }}{{ end }}
+                    </ul>
+                </div>
+                
+            </section>
         </div>
 
-        <div id="Projects" style="height: 100px;"></div>
-        <div class="list-content">
 
-            {{ with .Site.GetPage "/project/Projects.md" }}{{ .Content }}{{ end }}
+        <section id="Projects">
+            <div style="height: 100px;"></div>
+            <div class="list-content">
 
-        </div>
+                {{ with .Site.GetPage "project/_index.md" }}{{ .Content }}{{ end }}
+
+            </div>
+        </section>
+        
     </div>
 {{ end }}

@@ -1,0 +1,8 @@
+baseURL: /
+title: Renzo's site
+summaryLength: 5
+params:
+  author: Renzo Labajanan
+  description: >
+    The portfolio website of Renzo, a junior accounting student with a side
+    hobby of making websites.

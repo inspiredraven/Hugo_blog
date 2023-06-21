@@ -1,6 +1,8 @@
-
-## Projects
 ---
+headless: true
+---
+## Projects
+
 #### Completed projects
 - [Something 1]()
 - [Something 2]()

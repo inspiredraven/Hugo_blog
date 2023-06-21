@@ -4,7 +4,7 @@ date: 2020-06-01T21:23:22-05:00
 draft: false
 ---
 #### Company/Firm: The United States Marine Corps
-#### __Title:__ Hazarous Material/Waste Coordinator and Deployment Insepector
+#### Title: Hazarous Material/Waste Coordinator and Deployment Insepector
 #### Rank: Cpl - Sgt
 #### Date range: 2018 - June 2020
 #### Job Responsibilities:
