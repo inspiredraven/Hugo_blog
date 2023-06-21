@@ -10,7 +10,7 @@
                 <div class="timeline-marker-div">
                     <ul>
                         {{ with .Site.GetPage "/portfolio" }} 
-                        {{ range .Pages.ByDate }}
+                        {{ range .Pages.ByDate.Reverse }}
                         <li>
                             <div class="timeline-dot"></div>
                             <div class="summary">
@@ -29,7 +29,7 @@
                 <div class="timeline-marker-div">
                     <ul>
                         {{ with .Site.GetPage "/education" }} 
-                        {{ range .Pages.ByDate }}
+                        {{ range .Pages.ByDate.Reverse }}
                         <li>
                             <div class="timeline-dot"></div>
                             <div class="summary">
