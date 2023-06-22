@@ -542,10 +542,12 @@ h4 {
 
 .summary {
     opacity: 0;
-    transition: opacity 2s linear;
+    transform: translateY(10%);
+    transition: opacity 1.5s linear, transform 400ms linear;
 }
 
 .summary.appear {
     opacity: 1;
+    transform: translateY(0);
 }
 

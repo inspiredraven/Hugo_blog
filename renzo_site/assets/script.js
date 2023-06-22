@@ -15,7 +15,7 @@ burger.onclick = function() {
 
 const faders = document.querySelectorAll(".summary");
 const appearOptions = {
-    threshold: 1,
+    threshold: .5,
     rootMargin: "0px 0px -50px 0px"
 };
 
