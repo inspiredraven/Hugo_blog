@@ -9,7 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* Main div of single page html */
 .single-main {
     padding: 50px;
@@ -316,7 +315,7 @@ h4 {
     box-shadow: 2px 2px 5px 0px rgba(141, 137, 137, 0.6);
     border-radius: 10px;
     padding: 20px;
-    height: fit-content;
+    height: 80vh;
     width: 40vw;
     overflow: hidden;
 }
@@ -357,6 +356,8 @@ h4 {
     right: calc(100% - 10px);
     margin-top: 50px;
     z-index: 0;
+    
+    
 }
 
 /* Portfolio Project section */
@@ -384,6 +385,7 @@ h4 {
 
     .summary {
         width: 82vw;
+        height: 60vh;
     }
 }
 
@@ -538,14 +540,28 @@ h4 {
     }
 }
 
-/* scroll animations with js */
 
-.summary {
-    opacity: 0;
-    transition: opacity 2s linear;
+/* Experiments */
+#progress-bar {
+    width: 100vw;
+    height: 6px;
+    position: absolute;
+    bottom: 0px;
+    background: #000000;
+    z-index: 3;
+    transform: translateX(100%);
+    animation: scrollProgress 1s linear both;
+    animation-timeline: scrollProgress;
+
 }
 
-.summary.appear {
-    opacity: 1;
+/* observer (looks at body by default) */
+@scroll-timeline scrollProgress {
+    /* source: selector(body); /* only accepts id tags */
+    /* auto default; eventually removed */
+    time-range: 1s;
 }
 
+@keyframes scrollProgress {
+    to { transform: translateX(0); }
+}
