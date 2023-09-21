@@ -6,7 +6,7 @@ draft: false
 #### Branch: United States Army
 #### Title: Tactical Power Generation
 #### Date range: 2021
-#### Brief Overview:
+#### Overview:
 - Basic electrical theory
 - Basic understanding of a diesel engine
 - How to read an electronic schematic
