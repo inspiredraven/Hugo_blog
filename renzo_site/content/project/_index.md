@@ -4,18 +4,17 @@ headless: true
 ## Projects
 
 #### Completed projects
-- [Something 1]()
-- [Something 2]()
-- [Something 3]()
-- [Something 4]()
+- [Coming soon]()
+- [Coming soon]()
+- [Coming soon]()
+- [Coming soon]()
 
 #### Ongoing projects
 - [renzolabajanan website](/) 
-- [Something 2]()
-- [Something 3]()
-- [Something 4]()
+- [Coming soon]()
+- [Coming soon]()
+- [Coming soon]()
 
 #### Future projects
-- [Rubik\'s cube solver]()
 - [Investment bot]()
-- [Quiz creator for ACC classes]()
+- [Quiz and videos for Accounting classes]()

@@ -15,8 +15,8 @@ burger.onclick = function() {
 
 const faders = document.querySelectorAll(".summary");
 const appearOptions = {
-    threshold: .5,
-    rootMargin: "0px 0px -50px 0px"
+    threshold: .25,
+    rootMargin: "0px 0px -10px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver
