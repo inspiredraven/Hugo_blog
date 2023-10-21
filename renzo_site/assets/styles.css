@@ -552,21 +552,5 @@ h4 {
     transform: translateY(0);
 }
 
-/* Typing Animations */
-@keyframes type {
-    from { width: 0};
-    to {width: 100%};
-}
-.typing-animation {
-    margin: auto;
-    font: 4em courier;
-    border-right: .1em solid black;
-    font-weight: 550;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: type 6s steps(14, end) forwards;
-    width: 0;
-}
-
 
 
