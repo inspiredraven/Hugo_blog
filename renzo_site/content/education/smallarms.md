@@ -3,7 +3,7 @@ title: "Smallarms"
 date: 2015-06-20T22:19:58-05:00
 draft: false
 ---
-#### Branch: United States Marine Corps
+#### School/company: United States Marine Corps
 #### Title: Small Arms Repairer/Technician
 #### Date range: 2015
 #### Overview:

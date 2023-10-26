@@ -3,7 +3,7 @@ title: "Powergenerator"
 date: 2021-06-20T22:26:29-05:00
 draft: false
 ---
-#### Branch: United States Army
+#### School/company: United States Army
 #### Title: Tactical Power Generation
 #### Date range: 2021
 #### Overview:

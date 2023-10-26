@@ -3,7 +3,7 @@ title: "College"
 date: 2023-06-18T20:39:58-05:00
 draft: false
 ---
-#### School: The University of Southern Mississippi 
+#### School/company: The University of Southern Mississippi 
 #### Major: Accounting, BS 
 #### Date range: 2020 - 2024
 #### Achievements:

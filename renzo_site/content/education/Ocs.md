@@ -3,7 +3,7 @@ title: "Ocs"
 date: 2023-08-21T01:34:34-05:00
 draft: false
 ---
-#### School: Alabama Military Academy
+#### School/company: Alabama Military Academy
 #### Title: Officer Candidate
 #### Date range: 06/2023 - 08/2023 
 #### Overview:
